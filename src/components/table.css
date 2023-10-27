@@ -1,0 +1,34 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .table-container {
+    overflow-x: auto; 
+  }
+
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+
+.icons button{
+  margin: 0 13px;
+  border: none;
+  background-color: transparent
+}
+
+.selected-row {
+  background-color: rgba(204, 194, 194, 0.171);
+}
+
+.error-handling{
+  color:red;
+  margin : 10rem;
+  font-size: 5rem;
+}

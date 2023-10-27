@@ -1,0 +1,90 @@
+
+.pageination {
+    display : flex;
+    margin-top: 1rem;  /*12px*/
+    margin-left: 1rem; /*12px*/
+    /* border: solid; */
+    align-items: center;
+    justify-content: center;
+}
+
+.pageination ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;/*20px;*/
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.pageination ul li {
+
+    background: #75ade6;
+    padding: 4px;
+    height: 30px;
+    width: 30px;
+    border-radius: 55px;
+    align-self: center;
+    text-align: center;
+    overflow: hidden;
+    
+}
+.pageination ul li:hover {
+    transform: scale(1.1);
+    transition: all ease .2s;
+    overflow: hidden;
+}
+
+
+.pageination ul li button {
+
+    background-color: #599fe0;
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+.pageination button.active {
+    background-color: rgb(238, 238, 227);
+    
+  }
+  
+
+.deleteButton {
+    background-color: #e62841;
+    border: none;
+    border-radius: 12px;
+    height: 5vh;
+    width: 9vw;
+}
+
+.deleteButton:hover {
+    transform: scale(1.1);
+    transition: all ease .2s;
+}
+
+@media (max-width: 768px) {
+    .pageination {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 1rem auto; /* Center horizontally when in column layout */
+        /* margin-left: 3rem; */
+        
+    }
+
+    .pageination ul {
+        gap: 1rem; /* Adjust the gap for smaller screens */
+    }
+    .deleteButton {
+        background-color: #e62841;
+        border: none;
+        border-radius: 12px;
+        height: 50px;
+        width: 100px;
+    }
+
+    .circle-button{
+        margin-left: -1.4rem;
+    }
+}
